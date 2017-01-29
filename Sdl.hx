@@ -12,7 +12,8 @@ import cpp.UInt32;
 @:include("SDL.h")
 @:buildXml('
 <target id="haxe">
-    <lib name="../SDL2-2.0.3/lib/x86/SDL2.lib" />
+    <lib name="../SDL2-2.0.3/lib/x86/SDL2.lib" if="windows" />
+    <lib name="-lSDL2" if="linux"/>
 </target>
 <files id="haxe">
     <compilerflag value="-DINCLUDED_SDL_EventType" />

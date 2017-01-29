@@ -2,6 +2,3 @@
 -cpp cpp_out
 -D no-debug
 -D analyzer
-
---next
--cmd cpp_out\Main.exe
